@@ -1,0 +1,13 @@
+@import "./settings.scss";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+}
+
+body {
+  font-family: $main-font;
+}
