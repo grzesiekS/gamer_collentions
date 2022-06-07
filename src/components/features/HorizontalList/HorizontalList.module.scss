@@ -1,0 +1,15 @@
+.container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1.2em 0;
+}
+
+.position {
+  margin-right: 1.7em;
+}
+
+.position:last-child {
+  margin-right: 0;
+}
