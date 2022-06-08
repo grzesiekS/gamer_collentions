@@ -23,7 +23,7 @@ const positionList = [
 
 const Header = () => (
   <div className={styles.container}>
-    <HorizontalList listOfPositions={positionList} />
+    <HorizontalList listOfPositions={positionList} linkSize='big' />
   </div>
 );
 

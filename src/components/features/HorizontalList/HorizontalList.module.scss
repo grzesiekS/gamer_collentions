@@ -1,9 +1,23 @@
+@import "../../../styles/settings.scss";
+
 .container {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   padding: 1.2em 0;
+  transition: 1s all;
+  border-top: 1px solid $HorizonalList_border_color;
+  border-bottom: 1px solid $HorizonalList_border_color;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $HorizonalList_hover_bg-color;
+
+    .position > * {
+      color: $HorizonalList_hover_position_child_color;
+    }
+  }
 }
 
 .position {
