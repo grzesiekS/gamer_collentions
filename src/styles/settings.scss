@@ -5,13 +5,19 @@ $american_river: #636e72;
 $dracula_orchid: #2d3436;
 $city_lights: #dfe6e9;
 $exodus_fruit: #6c5ce7;
+$clouds: #ecf0f1;
 
  //NavBar Settings
 $NavBar_border_color: $dracula_orchid;
 $NavBar_hover_bg-color: $dracula_orchid;
 $NavBar_hover_position_child_color: $city_lights;
+$NavBar_list_bg-color: $clouds;
 
 //Link Settings
 $Link_color: $american_river;
 $Link_hover_color: #6c5ce7;
 $Link_hover_border-color: #6c5ce7;
+
+//PageTitle Settings
+$PageTitle_color: $clouds;
+$PageTitle_text-shadow_color: $exodus_fruit;

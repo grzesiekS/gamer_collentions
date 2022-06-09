@@ -1,5 +1,7 @@
 import React from 'react';
+import PageTitle from '../../common/PageTitle/PageTitle';
 import NavBar from '../../features/NavBar/NavBar';
+import Splash from '../../features/Splash/Splash';
 import styles from './Header.module.scss';
 
 const positionList = [
@@ -21,9 +23,13 @@ const positionList = [
   },
 ];
 
+const mainTitle = 'Game Colection';
+
 const Header = () => (
   <div className={styles.container}>
     <NavBar listOfPositions={positionList} linkSize='big' />
+    <Splash />
+    <PageTitle titleContent={mainTitle} />
   </div>
 );
 
