@@ -1,5 +1,5 @@
 import React from 'react';
-import HorizontalList from '../../features/HorizontalList/HorizontalList';
+import NavBar from '../../features/NavBar/NavBar';
 import styles from './Header.module.scss';
 
 const positionList = [
@@ -23,7 +23,7 @@ const positionList = [
 
 const Header = () => (
   <div className={styles.container}>
-    <HorizontalList listOfPositions={positionList} linkSize='big' />
+    <NavBar listOfPositions={positionList} linkSize='big' />
   </div>
 );
 

@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Link from '../../common/Link/Link';
-import styles from './HorizontalList.module.scss';
+import styles from './NavBar.module.scss';
 
-const HorizontalList = ({ listOfPositions, linkSize = 'normal' }) => (
+const NavBar = ({ listOfPositions, linkSize = 'normal' }) => (
   <ul className={styles.container}>
     {listOfPositions.map(position => (
       <li
@@ -17,9 +17,9 @@ const HorizontalList = ({ listOfPositions, linkSize = 'normal' }) => (
   </ul>
 );
 
-HorizontalList.propTypes = {
+NavBar.propTypes = {
   listOfPositions: PropTypes.array,
   linkSize: PropTypes.string,
 };
 
-export default HorizontalList;
+export default NavBar;
