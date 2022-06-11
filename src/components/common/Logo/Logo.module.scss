@@ -1,0 +1,19 @@
+@import "../../../styles/settings.scss";
+
+.logo {
+  background-color: $Logo_bg-color;
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px $Logo_box-shadow_color;
+}
+
+.small {
+  width: 2em;
+}
+
+.normal {
+  width: 5em;
+}
+
+.big {
+  width: 12em;
+}

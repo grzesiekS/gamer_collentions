@@ -21,7 +21,7 @@ const NavBar = ({ listOfPositions, linkSize = 'normal' }) => (
 
 NavBar.propTypes = {
   listOfPositions: PropTypes.array,
-  linkSize: PropTypes.string,
+  linkSize: PropTypes.oneOf(['small','normal','big']),
 };
 
 export default NavBar;

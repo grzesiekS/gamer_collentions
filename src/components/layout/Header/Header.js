@@ -1,6 +1,7 @@
 import React from 'react';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import NavBar from '../../features/NavBar/NavBar';
+import PageLogo from '../../features/PageLogo/PageLogo';
 import Splash from '../../features/Splash/Splash';
 import styles from './Header.module.scss';
 
@@ -30,6 +31,7 @@ const Header = () => (
     <NavBar listOfPositions={positionList} linkSize='big' />
     <Splash />
     <PageTitle titleContent={mainTitle} />
+    <PageLogo />
   </div>
 );
 

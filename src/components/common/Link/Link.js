@@ -16,7 +16,7 @@ const Link = ({ name, reference = '/#', size = 'normal' }) => (
 Link.propTypes = {
   name: PropTypes.string,
   reference: PropTypes.string,
-  size: PropTypes.string,
+  size: PropTypes.oneOf(['small','normal','big']),
 };
 
 export default Link;
