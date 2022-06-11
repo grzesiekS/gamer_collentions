@@ -1,5 +1,5 @@
 import React from 'react';
-import PageTitle from '../../common/PageTitle/PageTitle';
+import PageTitle from '../../features/PageTitle/PageTitle';
 import NavBar from '../../features/NavBar/NavBar';
 import PageLogo from '../../features/PageLogo/PageLogo';
 import Splash from '../../features/Splash/Splash';
