@@ -26,9 +26,9 @@ const positionList = [
 
 const mainTitle = 'Game Colection';
 
-const Header = () => (
+const Header : React.FC = () => (
   <div className={styles.container}>
-    <NavBar listOfPositions={positionList} linkSize='big' />
+    <NavBar listOfPositions={positionList} />
     <Splash />
     <PageTitle titleContent={mainTitle} />
     <PageLogo />

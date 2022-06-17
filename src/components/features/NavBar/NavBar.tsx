@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { sizeCSS } from '../../../Util';
 
 import Link from '../../common/Link/Link';
 import styles from './NavBar.module.scss';
 
-const NavBar = ({ listOfPositions, linkSize = 'normal' }) => (
+const NavBar : React.FC<NavBarProps> = ({ listOfPositions }) => (
   <div className={styles.container}>
     <ul className={styles.list}>
       {listOfPositions.map(position => (
@@ -12,16 +12,11 @@ const NavBar = ({ listOfPositions, linkSize = 'normal' }) => (
           key={position._id}
           className={styles.position}
         >
-          <Link name={position.Name} size={linkSize} />
+          <Link name={position.Name} size={sizeCSS.normal} />
         </li>
       ))}
     </ul>
   </div>
 );
-
-NavBar.propTypes = {
-  listOfPositions: PropTypes.array,
-  linkSize: PropTypes.oneOf(['small','normal','big']),
-};
 
 export default NavBar;

@@ -6,7 +6,7 @@ const splashData = {
   alt: 'Photo by Lorenzo Herrera on Unsplash',
 };
 
-const Splash = () => (
+const Splash : React.FC = () => (
   <div className={styles.container}>
     <img className={styles.image} src={splashData.src} alt={splashData.alt} />
   </div>

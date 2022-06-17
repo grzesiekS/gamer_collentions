@@ -1,10 +1,6 @@
 import React from 'react';
-
-import './styles/global.scss';
 import MainPage from './components/views/MainPage/MainPage';
 
-const App = () => (
+export const App : React.FC = () => (
   <MainPage />
 );
-
-export default App;
