@@ -12,7 +12,7 @@ const NavBar : React.FC<NavBarProps> = ({ listOfPositions }) => (
           key={position._id}
           className={styles.position}
         >
-          <Link name={position.Name} size={sizeCSS.normal} />
+          <Link name={position.Name} size={sizeCSS.big} />
         </li>
       ))}
     </ul>
