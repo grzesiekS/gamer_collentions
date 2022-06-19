@@ -1,0 +1,31 @@
+@import "../../../styles/settings.scss";
+
+.title {
+  text-shadow: 2px 2px 4px $Title_text-shadow_color;
+  color: $PageTitle_color;
+  user-select: none;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.small {
+  font-size: 1.5em;
+}
+
+.normal {
+  font-size: 3em;
+}
+
+.big {
+  font-size: 5em;
+}

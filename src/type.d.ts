@@ -20,6 +20,12 @@ interface LinkProps {
   size : string
 }
 
+interface TitleProps {
+  content : string
+  size : string
+  align : string
+}
+
 type children = {
   children : JSX.Element
 }

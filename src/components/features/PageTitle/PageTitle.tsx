@@ -1,9 +1,9 @@
 import React from 'react';
-
-import styles from './PageTitle.module.scss';
+import { alignTextCSS, sizeCSS } from '../../../Util';
+import Title from '../../common/Title/Title';
 
 const PageTitle : React.FC<PageTitleProps> = ({ titleContent }) => (
-  <h1 className={styles.title}>{titleContent}</h1>
+  <Title content={titleContent} size={sizeCSS.big} align={alignTextCSS.center} />
 );
 
 export default PageTitle;
