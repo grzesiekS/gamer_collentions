@@ -32,6 +32,13 @@ interface ButtonProps {
   OnClickFunc ?: () => void
 }
 
+interface IconsGeneratorProps {
+  iconName : string
+  iconsList : any
+  alternativeIcon : IntrinsicAttributes & FontAwesomeIconProps
+  children?
+}
+
 type children = {
   children : JSX.Element
 }
