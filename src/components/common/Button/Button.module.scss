@@ -1,0 +1,27 @@
+@import "../../../styles/settings.scss";
+
+.button {
+  display: inline-block;
+  background-color: $Button_bg-color;
+  transition: 1s all;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $Button_hover_bg-color;
+
+    .content {
+      color: $Button_hover_content_color;
+    }
+  }
+}
+
+.inactive {
+  display: none;
+}
+
+.content {
+  margin: 0;
+  padding: 0.4em 0.6em;
+  transition: 1s all;
+  color: $Button_content_color;
+}

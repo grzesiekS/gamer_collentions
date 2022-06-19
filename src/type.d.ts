@@ -26,6 +26,12 @@ interface TitleProps {
   align : string
 }
 
+interface ButtonProps {
+  content ?: string
+  children?
+  OnClickFunc ?: () => void
+}
+
 type children = {
   children : JSX.Element
 }

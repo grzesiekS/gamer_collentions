@@ -1,0 +1,17 @@
+@keyframes navBarListVisible {
+  from {
+    left: -8em;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes navBarListInvisible {
+  from {
+    left: 0;
+  }
+  to {
+    left: -8em;
+  }
+}

@@ -4,6 +4,7 @@
   text-shadow: 2px 2px 4px $Title_text-shadow_color;
   color: $PageTitle_color;
   user-select: none;
+  margin: 0;
 }
 
 .left {
@@ -28,4 +29,10 @@
 
 .big {
   font-size: 5em;
+}
+
+@media (max-width: 560px) {
+  .big {
+    font-size: 4em;
+  }
 }

@@ -1,4 +1,5 @@
 @import "../../../styles/settings.scss";
+@import "../../../styles/animations.scss";
 
 .container {
   padding-top: 1em;
@@ -32,4 +33,39 @@
 
 .position:last-child {
   margin-right: 0;
+}
+
+.sliderButton {
+  display: none;
+}
+
+@media (max-width: 478px) {
+  .container {
+    width: 8em;
+    display: flex;
+    position: fixed;
+    animation: navBarListInvisible 1s forwards;
+  }
+
+  .list {
+    flex-direction: column;
+  }
+
+  .position {
+    margin-right: 0;
+    margin: 1em 0 0 0.5em;
+  }
+
+  .position:first-child {
+    margin-top: 0;
+  }
+
+  .sliderButton {
+    display: inline-block;
+    padding-top: 1em;
+  }
+
+  .listVisible {
+    animation: navBarListVisible 1s forwards;
+  }
 }
