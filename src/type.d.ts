@@ -39,6 +39,21 @@ interface IconsGeneratorProps {
   children?
 }
 
+interface InfoElementProps {
+  title : string
+  description : string
+}
+
+interface NewsInfoProps {
+  children
+}
+
+interface NewsElementProps {
+  title : string
+  description : string
+  date : Date
+}
+
 type children = {
   children : JSX.Element
 }
