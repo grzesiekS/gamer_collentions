@@ -54,6 +54,12 @@ interface NewsElementProps {
   date : Date
 }
 
+interface DateCompProps {
+  day : number
+  month : number
+  year : number
+}
+
 type children = {
   children : JSX.Element
 }
