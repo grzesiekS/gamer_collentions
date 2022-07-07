@@ -1,4 +1,6 @@
 import React from 'react';
+import { alignTextCSS, sizeCSS } from '../../../Util';
+import Title from '../../common/Title/Title';
 import styles from './News.module.scss';
 import NewsElement from './NewsElement/NewsElement';
 
@@ -37,6 +39,11 @@ const newsData = [
 
 const News : React.FC = () => (
   <div className={styles.container}>
+    <Title
+      align={alignTextCSS.center}
+      size={sizeCSS.small}
+      content={`News`}
+    />
     {newsData.map(news => (
       <NewsElement
         key={news._id}
